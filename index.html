@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Landing Page</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+<style>
+  @keyframes slideInLeft {
+    from {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideInTop {
+    from {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  .slide-in-left {
+    animation: slideInLeft 1.5s ease-out forwards;
+  }
+
+  .slide-in-top {
+    animation: slideInTop 1.5s ease-out forwards;
+  }
+
+  .background-img {
+    animation: slideInTop 1.5s ease-out forwards;
+  }
+
+  .navbar-slide-in {
+    animation: slideInTop 1s ease-out forwards;
+  }
+</style>
+</head>
+<body style="background: #000;">
+
+<nav class="navbar navbar-expand-lg navbar-dark navbar-slide-in" style="width: 100%;background-color: #000; border: none;">
+  <div class="container">
+    <a class="navbar-brand" href="index.html" style="color: #CD2620; font-weight: bold;">Spooky Halloween</a>
+    <div>
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="menu.html">Menu</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container-fluid text-light py-5 background-img" 
+style="height: 500px; background: url(Blood.png); background-size: contain;">
+  <div class="row">
+    <div class="col-12 slide-in-left">
+      <h1 class="text-center mb-4" style="margin-top: 70px;">The History OF Horror</h1>
+      <p class="lead text-center mb-5" style="font-size: 30px; color: #CD2620; font-weight: bold;">Enjoy Being Terrified!</p>
+      <p class="lead text-center mb-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+        <br>Perspiciatis eius, cumque culpa quibusdam inventore ipsum beatae deleniti omnis laborum, <br>fugit officia in 
+        temporibus possimus nihil ad voluptate! Explicabo, magnam doloribus!</p>
+    </div>
+  </div>
+</div>
+</body>
+</html>
