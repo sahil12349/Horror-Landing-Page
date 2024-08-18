@@ -1,0 +1,38 @@
+
+  @keyframes slideInLeft {
+    from {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideInTop {
+    from {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  .slide-in-left {
+    animation: slideInLeft 1.5s ease-out forwards;
+  }
+
+  .slide-in-top {
+    animation: slideInTop 1.5s ease-out forwards;
+  }
+
+  .background-img {
+    animation: slideInTop 1.5s ease-out forwards;
+  }
+
+  .navbar-slide-in {
+    animation: slideInTop 1s ease-out forwards;
+  }
